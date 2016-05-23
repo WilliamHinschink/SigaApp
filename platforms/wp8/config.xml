@@ -12,9 +12,6 @@
     <feature name="Compass">
         <param name="wp-package" value="Compass" />
     </feature>
-    <feature name="Notification">
-        <param name="wp-package" value="Notification" />
-    </feature>
     <feature name="Globalization">
         <param name="wp-package" value="Globalization" />
     </feature>

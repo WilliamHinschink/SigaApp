@@ -19,9 +19,6 @@
         "cordova-plugin-device-orientation": {
             "PACKAGE_NAME": "{a07cc240-20e1-11e6-b48f-1f068077be8e}"
         },
-        "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "{a07cc240-20e1-11e6-b48f-1f068077be8e}"
-        },
         "cordova-plugin-globalization": {
             "PACKAGE_NAME": "{a07cc240-20e1-11e6-b48f-1f068077be8e}"
         },
