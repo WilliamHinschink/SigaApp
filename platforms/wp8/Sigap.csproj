@@ -147,10 +147,6 @@
             <DependentUpon>MainPage.xaml</DependentUpon>
         </Compile>
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <Page Include="Plugins\cordova-plugin-contacts\ContactPicker.xaml">
-            <SubType>Designer</SubType>
-            <Generator>MSBuild:Compile</Generator>
-        </Page>
         <Page Include="Plugins\cordova-plugin-dialogs\NotificationBox.xaml">
             <SubType>Designer</SubType>
             <Generator>MSBuild:Compile</Generator>
@@ -160,6 +156,10 @@
             <Generator>MSBuild:Compile</Generator>
         </Page>
         <Page Include="Plugins\cordova-plugin-media-capture\VideoRecorder.xaml">
+            <SubType>Designer</SubType>
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Plugins\cordova-plugin-contacts\ContactPicker.xaml">
             <SubType>Designer</SubType>
             <Generator>MSBuild:Compile</Generator>
         </Page>
@@ -234,29 +234,9 @@
         </PostBuildEvent>
     </PropertyGroup>
     <ItemGroup>
-        <Compile Include="Plugins\cordova-plugin-battery-status\Battery.cs" />
-    </ItemGroup>
-    <ItemGroup>
-        <Compile Include="Plugins\cordova-plugin-camera\Camera.cs" />
-    </ItemGroup>
-    <ItemGroup>
         <Compile Include="Plugins\cordova-plugin-console\DebugConsole.cs" />
     </ItemGroup>
-    <ItemGroup>
-        <Compile Include="Plugins\cordova-plugin-contacts\Contacts.cs" />
-    </ItemGroup>
-    <ItemGroup>
-        <Compile Include="Plugins\cordova-plugin-contacts\ContactsHelper.cs" />
-    </ItemGroup>
     <ItemGroup />
-    <ItemGroup>
-        <Compile Include="Plugins\cordova-plugin-contacts\ContactPicker.xaml.cs">
-            <DependentUpon>ContactPicker.xaml</DependentUpon>
-        </Compile>
-    </ItemGroup>
-    <ItemGroup>
-        <Compile Include="Plugins\cordova-plugin-contacts\ContactPickerTask.cs" />
-    </ItemGroup>
     <ItemGroup>
         <Compile Include="Plugins\cordova-plugin-device\Device.cs" />
     </ItemGroup>
@@ -299,11 +279,25 @@
     <ItemGroup>
         <Compile Include="Plugins\cordova-plugin-inappbrowser\InAppBrowser.cs" />
     </ItemGroup>
+    <ItemGroup />
+    <ItemGroup />
     <ItemGroup>
-        <Compile Include="Plugins\cordova-plugin-media\Media.cs" />
+        <Compile Include="Plugins\cordova-plugin-network-information\NetworkStatus.cs" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Plugins\cordova-plugin-media\AudioPlayer.cs" />
+        <Compile Include="Plugins\cordova-plugin-splashscreen\SplashScreen.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Plugins\cordova-plugin-splashscreen\ResolutionHelper.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Plugins\cordova-plugin-statusbar\StatusBar.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Plugins\cordova-plugin-battery-status\Battery.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Plugins\cordova-plugin-camera\Camera.cs" />
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Plugins\cordova-plugin-media-capture\Capture.cs" />
@@ -327,16 +321,25 @@
         </Compile>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Plugins\cordova-plugin-network-information\NetworkStatus.cs" />
+        <Compile Include="Plugins\cordova-plugin-contacts\Contacts.cs" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Plugins\cordova-plugin-splashscreen\SplashScreen.cs" />
+        <Compile Include="Plugins\cordova-plugin-contacts\ContactsHelper.cs" />
+    </ItemGroup>
+    <ItemGroup />
+    <ItemGroup>
+        <Compile Include="Plugins\cordova-plugin-contacts\ContactPicker.xaml.cs">
+            <DependentUpon>ContactPicker.xaml</DependentUpon>
+        </Compile>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Plugins\cordova-plugin-splashscreen\ResolutionHelper.cs" />
+        <Compile Include="Plugins\cordova-plugin-contacts\ContactPickerTask.cs" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Plugins\cordova-plugin-statusbar\StatusBar.cs" />
+        <Compile Include="Plugins\cordova-plugin-media\Media.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Plugins\cordova-plugin-media\AudioPlayer.cs" />
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Plugins\cordova-plugin-vibration\Vibration.cs" />

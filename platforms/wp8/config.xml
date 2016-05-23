@@ -1,16 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <feature name="Battery">
-        <param name="wp-package" value="Battery" />
-    </feature>
-    <feature name="Camera">
-        <param name="wp-package" value="Camera" />
-    </feature>
     <feature name="Console">
         <param name="wp-package" value="DebugConsole" />
-    </feature>
-    <feature name="Contacts">
-        <param name="wp-package" value="Contacts" />
     </feature>
     <feature name="Device">
         <param name="wp-package" value="Device" />
@@ -36,12 +27,6 @@
     <feature name="InAppBrowser">
         <param name="wp-package" value="InAppBrowser" />
     </feature>
-    <feature name="Media">
-        <param name="wp-package" value="Media" />
-    </feature>
-    <feature name="Capture">
-        <param name="wp-package" value="Capture" />
-    </feature>
     <feature name="NetworkStatus">
         <param name="wp-package" value="NetworkStatus" />
     </feature>
@@ -51,6 +36,21 @@
     </feature>
     <feature name="StatusBar">
         <param name="wp-package" value="StatusBar" />
+    </feature>
+    <feature name="Battery">
+        <param name="wp-package" value="Battery" />
+    </feature>
+    <feature name="Camera">
+        <param name="wp-package" value="Camera" />
+    </feature>
+    <feature name="Capture">
+        <param name="wp-package" value="Capture" />
+    </feature>
+    <feature name="Contacts">
+        <param name="wp-package" value="Contacts" />
+    </feature>
+    <feature name="Media">
+        <param name="wp-package" value="Media" />
     </feature>
     <feature name="Vibration">
         <param name="wp-package" value="Vibration" />
