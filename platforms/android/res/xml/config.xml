@@ -4,15 +4,6 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
-    <feature name="Accelerometer">
-        <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
-    </feature>
-    <feature name="Compass">
-        <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
-    </feature>
-    <feature name="Globalization">
-        <param name="android-package" value="org.apache.cordova.globalization.Globalization" />
-    </feature>
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
     </feature>
@@ -30,6 +21,12 @@
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    <feature name="Vibration">
+        <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
     </feature>
     <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
     <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
