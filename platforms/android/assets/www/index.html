@@ -94,12 +94,12 @@
 					type: 		'POST',
 					data: 		postData+'&amp;lid='+landmarkID,
 					dataType: 	'json',
-					url: 		'http://192.168.10.167/SigaWeb/PhonegapServlet',
+					url: 		'http://192.168.10.167:8080/SigaWeb/PhonegapServlet',
 					success: function(data){
 						if(data != null){
 							console.log(data);
 							navigator.notification.alert('Usuário logado!', null, 'Sucesso');
-							window.open('http://192.168.10.167/login.xhtml?id='+data, '_system', 'location=no');
+							window.open('http://192.168.10.167:8080/login.xhtml?id='+data, '_system', 'location=no');
 						}else{
 							console.log(data);
 							navigator.notification.alert('Usuário não encontrado!', null, 'Desculpe');
