@@ -4,7 +4,7 @@
     <Languages xmlns="">
         <Language code="en-US" />
     </Languages>
-    <App Author="XGH Team" BitsPerPixel="32" Description="Sigap sample application that responds to the deviceready event." Genre="apps.normal" ProductID="{a07cc240-20e1-11e6-b48f-1f068077be8e}" Publisher="XGH Team" PublisherID="{db093ed5-53b1-45f7-af72-751e8f36ab80}" RuntimeType="Silverlight" Title="Sigap" Version="1.0.0" xmlns="">
+    <App Author="XGH Team" BitsPerPixel="32" Description="Sigap sample application that responds to the deviceready event." Genre="apps.normal" ProductID="{a07cc240-20e1-11e6-b48f-1f068077be8e}" Publisher="XGH Team" PublisherID="{db093ed5-53b1-45f7-af72-751e8f36ab80}" RuntimeType="Silverlight" Title="Sigapp" Version="1.0.1" xmlns="">
         <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
         <Capabilities>
             <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
@@ -15,7 +15,7 @@
             <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
         </Tasks>
         <Tokens>
-            <PrimaryToken TaskName="_default" TokenID="Sigap">
+            <PrimaryToken TaskName="_default" TokenID="Sigapp">
                 <TemplateFlip>
                     <SmallImageURI IsRelative="true" IsResource="false">Background.png</SmallImageURI>
                     <Count>0</Count>

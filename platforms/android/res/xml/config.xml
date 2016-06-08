@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.phonegap.helloworld" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
@@ -47,7 +47,7 @@
     <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
     <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
     <allow-intent href="market:*" />
-    <name>Sigap</name>
+    <name>Sigapp</name>
     <description>
         Sigap sample application that responds to the deviceready event.
     </description>
@@ -59,7 +59,9 @@
     <preference name="android-minSdkVersion" value="14" />
     <preference name="phonegap-version" value="cli-5.1.1" />
     <icon src="icon.png" />
-    <access origin="*" />
+    <access browserOnly="true" origin="*" />
+    <access origin="http://192.168.10.167:8080/SigaWeb/index.xhtml" />
+    <allow-navigation origin="http://192.168.10.167:8080/SigaWeb/index.xhtml" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
