@@ -75,7 +75,7 @@
 		</form>
 	</div>
 	<script type="text/javascript" charset="utf-8">
-		document.addEventListener("deviceready", onDeviceReady, false);
+		/*document.addEventListener("deviceready", onDeviceReady, false);*/
 		$(window).load(function(){
 			/*$("input:hidden").val(device.uuid);*/
 			$("input:hidden").val(device.uuid);
@@ -91,7 +91,7 @@
 				/*deviceProperties.innerHTML = 'ID: '+ navigator.userAgent;*/
 				
 				$.ajax({
-					type: 		'POST',
+					type: 		'GET',
 					data: 		postData+'&amp;lid='+landmarkID,
 					dataType: 	'json',
 					url: 		'http://siga.altero.com.br/PhonegapServlet',
@@ -108,7 +108,7 @@
 					},
 					error: function(data){
 						console.log(data);
-						navigator.notification.alert('Usuário não encontrado!', null, 'Desculpe');
+						navigator.notification.alert(data.responseText, null, 'Desculpe');
 					}
 				});
 				return false;
