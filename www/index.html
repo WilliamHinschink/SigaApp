@@ -91,27 +91,35 @@
 				/*deviceProperties.innerHTML = 'ID: '+ navigator.userAgent;*/
 				
 				$.ajax({
-					type: 		'GET',
+					type: 		'POST',
 					data: 		postData+'&amp;lid='+landmarkID,
 					dataType: 	'json',
 					url: 		'http://siga.altero.com.br/PhonegapServlet',
+					/*url: 		'http://192.168.10.167:8080/SigaWeb/PhonegapServlet',*/
+					cache: true,
 					success: function(data){
-						if(data != null){
+						if(data == "ERROR Usuário e/ou Senha Inválido!"){
 							console.log(data);
-							navigator.notification.alert('Usuário logado!', null, 'Sucesso');
-							window.open('http://siga.altero.com.br/login.xhtml?id='+data, '_system', 'location=no');
+							navigator.notification.alert('Usuário e/ou Senha Inválido!', null, 'Erro!');
+						}
+						else if(data == "ERROR Primeiro acesso no computador! Id Computador Cadastrado!"){
+							navigator.notification.alert("Primeiro acesso no dispositivo! Id Dispositivo Cadastrado!", null, 'Erro!');
+						}else if(data == "ERROR Id Computador Bloqueado! Entre em contato com o suporte!"){
+							console.log(data);
+							navigator.notification.alert('Id Dispositivo Bloqueado! Entre em contato com o suporte!', null, 'Erro!');
 						}else{
 							console.log(data);
-							navigator.notification.alert('Usuário não encontrado!', null, 'Desculpe');
+							navigator.notification.alert('Processo finalizado com sucesso', null, 'Sucesso!');
+							window.open('http://siga.altero.com.br/login.xhtml?id='+data, '_system', 'location=no');
 						}
 						
 					},
 					error: function(data){
 						console.log(data);
-						navigator.notification.alert(data.responseText, null, 'Desculpe');
+						navigator.notification.alert(data.statusText, null, 'Desculpe');
 					}
 				});
-				return false;
+				return true;
 			});
 		}
     </script>
