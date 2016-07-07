@@ -65,8 +65,7 @@
 				</p>
 				
 				<div data-role="fieldcontainer">
-					<button type="submit" 
-							onclick="onDeviceReady();" >
+					<button type="submit" >
 						Entrar
 					</button>
 				</div>
@@ -83,7 +82,7 @@
 		/*var deviceProperties = document.getElementById ('deviceProperties');
 				deviceProperties.innerHTML = 'ID: '+ navigator.userAgent;*/
 				
-		function onDeviceReady() {
+		
 			$('form').submit(function(){
 				var landmarkID 	= $(this).parent().attr('data-landmark-id');
 				var postData    = $(this).serialize();
@@ -121,7 +120,7 @@
 				});
 				return true;
 			});
-		}
+		
     </script>
 	<script type="text/javascript" src="cordova.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
